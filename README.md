@@ -1,4 +1,4 @@
-# School
+# About me
 Hi,
 
 I am Charles and this is my public repository for the codes I have written during school.
