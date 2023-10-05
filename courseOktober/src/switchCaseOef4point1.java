@@ -10,22 +10,55 @@ public class switchCaseOef4point1 {
 
         double inkomen = scanner.nextDouble();
 
-        if (inkomen < 0) {
-            System.out.println("Foutive invoer");
-        } else {
+        System.out.println("Wat is u burgerlijke staat (alleenstaand,  gehuwd of samenwonend)?");
+        String burgerlijkeStaat = scanner.next();
 
-            if(inkomen <= 15000){
-                System.out.println("uw belasting is: " + "€" + (inkomen * 0.2));
-            } else if(inkomen > 15000 && inkomen <= 20000){
-                System.out.println("uw belasting is: " + "€" + ((15000 * 0.2) + ((inkomen - 15000) * 0.3)));
-            } else if (inkomen > 20000 && inkomen <= 50000){
-                System.out.println("uw belasting is:" + "€" + ((15000 * 0.2) + (5000 * 0.3) + ((inkomen - 20000) * 0.4)));
-            } else if (inkomen > 50000){
-                System.out.println("uw belasting is:" + "€" + ((15000 * 0.2) + (5000 * 0.3) + (30000 * 0.4) + ((inkomen - 50000) * 0.55)));
-            }
+        double korting = 0;
+        double belasting = 0;
+
+        switch(burgerlijkeStaat){
+
+            case "alleenstaand":
+                korting = 2000;
+                break;
+
+            case "gehuwd":
+                korting = 1000;
+                break;
+
+            case "samenwonend":
+                korting = 500;
+                break;
+
+            default:
+                System.out.println("Foutieve invoer!");
+
+
+
 
 
         }
+
+        if (inkomen < 0) {
+            System.out.println("Foutive invoer");
+
+        } else if (inkomen <= 15000) {
+                belasting = (inkomen - korting) * 0.20;
+            } else if (inkomen <= 20000) {
+                belasting = (15000 - korting) * 0.20 + (inkomen - 15000) * 0.30;
+            } else if (inkomen <= 50000) {
+                belasting = (15000 - korting) * 0.20 + (20000 - 15000) * 0.30 + (inkomen - 20000) * 0.40;
+            } else {
+                belasting = (15000 - korting) * 0.20 + (20000 - 15000) * 0.30 + (50000 - 20000) * 0.40 + (inkomen - 50000) * 0.55;
+            }
+
+            System.out.println("U moet €" + belasting + " aan belastingen betalen.");
+
+
+
+
+
+
     }
 }
 
