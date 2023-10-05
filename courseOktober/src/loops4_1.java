@@ -18,7 +18,9 @@ public class loops4_1 {
             if(pos >= 0){
                 aantal++;
             }
-            System.out.println(aantal);
+
         }
+
+        System.out.println(aantal);
     }
 }
