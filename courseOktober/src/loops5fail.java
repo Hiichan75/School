@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class loops5 {
+public class loops5fail {
 
     public static void main(String[] args) {
 
@@ -43,4 +42,3 @@ public class loops5 {
         }
     }
 }
-
