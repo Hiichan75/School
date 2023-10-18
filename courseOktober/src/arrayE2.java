@@ -16,7 +16,7 @@ public class arrayE2 {
                 if (a[i] != b[i]) {
                     gelijk = false;
                 }
-            }
+            }1
 
             }else{
                 gelijk = false;

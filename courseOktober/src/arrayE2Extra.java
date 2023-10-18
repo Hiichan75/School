@@ -33,6 +33,6 @@ public class arrayE2Extra {
         tweeArrayVergelijken(a,b);
         System.out.println("vergelijking array 1 en 3");
         tweeArrayVergelijken(a,c);
-
+1
     }
 }
