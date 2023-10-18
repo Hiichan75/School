@@ -15,7 +15,7 @@ public class arrayE1 {
             System.out.println("geef een waarde in");
             int input = sc.nextInt();
             waardes[i] = input;
-            i++;1
+            i++;
         }while(i < arrayGrootte);
         System.out.println("de array ziet er zo uit");
         System.out.println(Arrays.toString(waardes));

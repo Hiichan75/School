@@ -30,6 +30,6 @@ public class arrayE3 {
         System.out.println("je hebt " + evenGetallen + " even getallen");
         System.out.println("je hebt " + (waardes.length - evenGetallen) + " oneven getallen");
 
-1
+
     }
 }
