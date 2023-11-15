@@ -10,8 +10,8 @@ public class switchCaseOef4point1 {
 
         double inkomen = scanner.nextDouble();
 
-        System.out.println("Wat is u burgerlijke staat (alleenstaand,  gehuwd of samenwonend)?");
-        String burgerlijkeStaat = scanner.next();
+        System.out.println("Wat is u burgerlijke staat (alleenstaand, gehuwd of samenwonend)?");
+        String burgerlijkeStaat = scanner.next().toLowerCase();
 
         double korting = 0;
         double belasting = 0;
