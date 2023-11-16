@@ -6,24 +6,29 @@ public class controlestructuur7 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Geef een hoogte in");
-        int hoogte = sc.nextInt();
+        int hoogte, breedte;
 
-        System.out.println("Geef een breedte in");
-        int breedte = sc.nextInt();
+        do{
 
-        if(hoogte > 20 || breedte > 20){
-            System.out.println("mag niet probeer 20 of minder");
-        }else{
+            System.out.println("Geef een hoogte in");
+            hoogte = sc.nextInt();
+
+            System.out.println("Geef een breedte in");
+            breedte = sc.nextInt();
+
+
+        }while(hoogte > 20 || hoogte < 0 || breedte > 20 || breedte < 0);
+
+
             for(int i = 0; i < hoogte; i++){
                 for(int j = 0; j < breedte; j++){
-                    System.out.print('*');
+                    System.out.print('*'+" ");
         }
                 System.out.println();
 
 
 
-            }
+
 
         }
     }
