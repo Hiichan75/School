@@ -10,7 +10,7 @@ public class schrikkeljaar {
 
         int jaartal = sc.nextInt();
 
-        if(jaartal % 400 == 0 || (jaartal % 100 != 0 && jaartal % 4 == 0)){
+        if(jaartal % 400 == 0 || jaartal % 100 != 0 && jaartal % 4 == 0){
             System.out.println(jaartal + " is een schrikkeljaar");
         }else{
             System.out.println(jaartal + " is geen schrikkeljaar");

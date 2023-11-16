@@ -14,15 +14,14 @@ public class oef1again {
 
         boolean stoppen = true;
 
-        while(stoppen){
-
+        while (stoppen) {
 
 
             System.out.println("1 - Optellen / 2 - Aftrekken / 3 - Maal / 4 - Delen / 5 - Stoppen");
 
             operator = sc.nextInt();
 
-            if(operator == 1 || operator == 2 || operator == 3 || operator == 4){
+            if (operator == 1 || operator == 2 || operator == 3 || operator == 4) {
 
 
                 System.out.println("geef nummer 1");
@@ -33,7 +32,7 @@ public class oef1again {
 
                 sN = sc.nextDouble();
 
-                switch(operator){
+                switch (operator) {
                     case 1:
                         result = fN + sN;
                         break;
@@ -44,39 +43,39 @@ public class oef1again {
                         result = fN * sN;
                         break;
                     case 4:
-                        if(sN == 0){
+                        if (sN == 0) {
                             System.out.println("Je Kan niet delen door 0");
                             continue;
 
-                        }else{
+                        } else {
                             result = fN / sN;
                         }
                         break;
 
                     default:
                         System.out.println("Error probeer opnieuw");
-
+                        continue;
 
 
                 }
 
-                }else if (operator == 5) {
+            } else if (operator == 5) {
 
                 System.out.println("programma is nu gestopt");
                 stoppen = false;
             } else {
                 System.out.println("ongeldige invoer probeer opnieuw");
+                continue;
             }
 
-                if(stoppen && operator >= 1 && operator <=4){
-                    System.out.println("Resultaat is : " + result);
+            if (stoppen && operator >= 1 && operator <= 4) {
+                System.out.println("Resultaat is : " + result);
 
 
             }
         }
 
     }
-
 
 
 }

@@ -14,16 +14,16 @@ public class arrayE3 {
 
         int i = 0;
 
-        do{
+        do {
             System.out.println("geef een waarde in");
             int input = sc.nextInt();
             waardes[i] = input;
             i++;
-        }while(i < arrayGrootte);
+        } while (i < arrayGrootte);
         System.out.println("de array ziet er zo uit");
         System.out.println(Arrays.toString(waardes));
-        for (int j = 0; j < waardes.length; j++){
-            if(waardes[j] % 2 == 0){
+        for (int j = 0; j < waardes.length; j++) {
+            if (waardes[j] % 2 == 0) {
                 evenGetallen++;
             }
         }
