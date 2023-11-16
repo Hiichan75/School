@@ -4,7 +4,7 @@ public class wk1_5oef2 {
 
         double rand = Math.random();
 
-        double random = rand * 10;
+        double random = rand * 100;
 
         int uitkomstWaarde = (int) random;
 
